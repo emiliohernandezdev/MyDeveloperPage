@@ -1,0 +1,84 @@
+<nav class="uk-navbar-container uk-visible@s" uk-navbar
+  uk-sticky="cls-active: uk-navbar-sticky;" id="navb">
+
+  <div class="uk-navbar-left">
+
+ <ul class="uk-navbar-nav">
+          <a href="" class="uk-navbar-item uk-logo">Emilio</a>
+      <li><a class="item" routerLink="/home"><span style="margin-right: 3px" uk-icon="home" uk-scroll></span>Inicio</a></li>
+      <li><a class="item" routerLink="/home/about"><span style="margin-right: 3px" uk-icon="user"></span> Acerca de mí</a></li>
+      <li><a class="item"><span style="margin-right: 3px" uk-icon="users"></span> Empleados</a></li>
+    </ul> 
+
+  </div>
+  <div class="uk-navbar-right">
+
+    <ul class="uk-navbar-nav">
+      <li>
+        <a class="item" href="#"><span uk-icon="user" style="margin-right: 3px;"></span> Example</a>
+        <div class="uk-navbar-dropdown">
+          <ul class="uk-nav uk-navbar-dropdown-nav">
+            <li class="uk-active"><a routerLink="/profile"><span uk-icon="list"></span> Perfil</a></li>
+            <li class="uk-active"><a href="#modal-center" uk-toggle><span uk-icon="settings"></span> Configuracion</a></li>
+            <li class="uk-nav-divider"></li>
+            <li class="uk-active"><a><span uk-icon="sign-out"></span> Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="uk-navbar uk-navbar-container uk-hidden@s" uk-sticky="cls-active: uk-navbar-sticky;" id="navb">
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-toggle item" uk-toggle="target: #offcanvas-nav" href="#">
+      <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menú</span>
+    </a>
+  </div> 
+</nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: push; bg-close: true">
+  <div class="uk-offcanvas-bar" id="offcanvas">
+
+    <ul class="uk-nav uk-nav-default">
+      <li>
+          <img style="margin-left: 5vw;" class="uk-navbar-item uk-logo uk-border-circle" src="../../../assets/images/i.jpg" alt="">
+          <dl class="uk-description-list uk-text-center">
+                <dt class="uk-text-success">Emilio Andrés Hernández</dt>
+                <dd>Informático Junior.</dd>
+                <dd>Desarrollo web, y móvil</dd>
+            </dl>
+      </li>
+      <li><a><span style="margin-right: 3px" uk-icon="home"></span>Inicio</a></li>
+      <li><a><span style="margin-right: 3px" uk-icon="user"></span>Sobre mí</a></li>
+      <li><a><span style="margin-right: 3px" uk-icon="users"></span>Empleados</a></li>
+      <hr class="uk-divider-icon">
+      <li class="uk-nav-header">
+          Contacto:
+      </li>
+      <li><a class="contactlink" href="https://github.com/emiliohernandezdev" target="_blank"><span style="margin-right: 3px" uk-icon="github"></span>emiliohernandezdev</a></li>
+      <li><a class="contactlink" href="https://github.com/emiliohernandezdev" target="_blank"><span style="margin-right: 3px" uk-icon="facebook"></span>Emilio Hernández</a></li>
+      <li><a class="contactlink" href="https://instagram.com/emiliohernandez._/" target="_blank"><span style="margin-right: 3px" uk-icon="instagram"></span>emiliohernandez._</a></li>
+      <li><a class="contactlink" href="https://github.com/emiliohernandezdev" target="_blank"><span style="margin-right: 3px" uk-icon="whatsapp"></span>+502 3545-3894</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div id="modal-center" class="uk-flex-top" uk-modal>
+  <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-header">
+          <h2 class="uk-modal-title">Configuración</h2>
+      </div>
+      <div class="uk-modal-body">
+          <button class="uk-button uk-button-primary"><span uk-icon="file-pdf"></span>&nbsp;Generar constancia de trabajo</button>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+          &nbsp;
+          <button class="uk-button uk-button-primary" type="button">Guardar</button>
+      </div>
+  </div>
+</div>

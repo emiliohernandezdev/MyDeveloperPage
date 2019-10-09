@@ -1,0 +1,52 @@
+#navb{
+    background-color: black !important;
+}
+
+#offcanvas{
+    background-color: black !important;
+}
+
+.uk-navbar-nav a{
+    color: white;
+}
+
+.uk-navbar-nav a:hover{
+    color: green;
+    border-bottom: 1.5px green solid;
+}
+
+.uk-navbar-nav li a:hover span{
+    color: green;
+}
+
+
+.uk-description-list dt, dd{
+    color: white;
+}
+
+li a{
+    color: white;
+}
+
+.uk-navbar-dropdown-nav li a span{
+    color: black;
+}
+
+.uk-navbar-dropdown-nav li a{
+    color: black;
+}
+
+
+.uk-nav li a:hover{
+    color: black;
+    border-bottom: none;
+}
+
+
+li a .contactlink{
+    color: white;
+}
+
+.contactlink a, span{
+    color: white;
+}
